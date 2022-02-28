@@ -10,8 +10,6 @@ Türk Dil Kurumu API
 npm install @technoeren/tdk-api
 ```
 
-or
-
 ```
 yarn add @technoeren/tdk-api
 ```
