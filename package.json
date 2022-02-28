@@ -1,30 +1,43 @@
 {
-  "name": "tdk-api",
-  "version": "1.0.0",
+  "name": "@technoeren/tdk-api",
+  "version": "0.0.1",
   "main": "app.js",
   "repository": "git@github.com:technoeren13/tdk-api.git",
   "author": "technoeren13 <erenbaltaci7878@gmail.com>",
   "license": "MIT",
+  "private": false,
   "scripts": {
-    "start": "node src/app.js",
-    "dev": "nodemon src/app.ts",
-    "test": "node test/test.ts",
+    "start": "node src/app",
+    "dev": "nodemon dist/app.js",
+    "test": "tsc && node dist/test.js",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
     "prepare": "husky install"
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "tdk",
+    "tdk-api",
+    "türk dil kurumu"
+  ],
   "husky": {
     "hooks": {
       "pre-commit": "yarn format && git add ."
     }
   },
   "devDependencies": {
+    "@types/node": "^17.0.21",
     "typescript": "^4.5.5"
   },
   "dependencies": {
+    "@technoeren/tdk-api": "^0.0.1",
     "axios": "^0.26.0",
     "husky": "^7.0.4",
     "nodemon": "^2.0.15",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "ts-node": "^10.5.0"
   }
 }
