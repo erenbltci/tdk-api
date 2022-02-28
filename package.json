@@ -1,6 +1,6 @@
 {
   "name": "@technoeren/tdk-api",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "app.js",
   "repository": "git@github.com:technoeren13/tdk-api.git",
   "author": "technoeren13 <erenbaltaci7878@gmail.com>",
