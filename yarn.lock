@@ -36,6 +36,18 @@
     nodemon "^2.0.15"
     prettier "^2.5.1"
 
+"@technoeren/tdk-api@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@technoeren/tdk-api/-/tdk-api-0.0.5.tgz#ad098a1e2b7c121f32b9be90a6b6eb5300599f77"
+  integrity sha512-q7IfCISFarqKJi6xvQwr9BsYUxHn8MbXuB4HVlRBsICxEsFolc+x/R6wzpJqRPEjRiRDR4/B31oIsIsHAwHAww==
+  dependencies:
+    "@technoeren/tdk-api" "^0.0.1"
+    axios "^0.26.0"
+    husky "^7.0.4"
+    nodemon "^2.0.15"
+    prettier "^2.5.1"
+    ts-node "^10.5.0"
+
 "@tsconfig/node10@^1.0.7":
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/@tsconfig/node10/-/node10-1.0.8.tgz#c1e4e80d6f964fbecb3359c43bd48b40f7cadad9"
@@ -777,9 +789,9 @@ touch@^3.1.0:
     nopt "~1.0.10"
 
 ts-node@^10.5.0:
-  version "10.5.0"
-  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-10.5.0.tgz#618bef5854c1fbbedf5e31465cbb224a1d524ef9"
-  integrity sha512-6kEJKwVxAJ35W4akuiysfKwKmjkbYxwQMTBaAxo9KKAx/Yd26mPUyhGz3ji+EsJoAgrLqVsYHNuuYwQe22lbtw==
+  version "10.6.0"
+  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-10.6.0.tgz#c3f4195d5173ce3affdc8f2fd2e9a7ac8de5376a"
+  integrity sha512-CJen6+dfOXolxudBQXnVjRVvYTmTWbyz7cn+xq2XTsvnaXbHqr4gXSCNbS2Jj8yTZMuGwUoBESLaOkLascVVvg==
   dependencies:
     "@cspotcode/source-map-support" "0.7.0"
     "@tsconfig/node10" "^1.0.7"
