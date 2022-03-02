@@ -1,7 +1,7 @@
 import axios from "axios";
 import { InvalidWord, ValueNotFound } from "./helpers/errors";
 
-export class TDKAPI {
+export default class TDKAPI {
   constructor() {}
 
   public async getWord(word: string): Promise<boolean | object> {

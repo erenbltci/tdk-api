@@ -1,9 +1,9 @@
-import { TDKAPI } from "./app";
+import TDKAPI from "./app";
 
 const api = new TDKAPI();
 
 async function run() {
-  await api.getWord("esenlik").then((a) => {
+  await api.getProVerbs("keyif").then((a) => {
     console.log(a);
   });
 }
