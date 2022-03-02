@@ -25,7 +25,6 @@ const tdkapi = new TDKAPI();
 ## Kelime Arama
 
 ```js
-
 tdkapi.getWord("esenlik").then(response => {
 
 
@@ -36,8 +35,7 @@ console.log(response)
 
 Çıktı:
 
-```json
-
+```
 {
   anlamlar: [
     {
@@ -53,7 +51,6 @@ console.log(response)
 ## Kelimenin Olup Olmadığını Kontrol Etme
 
 ```js
-
 tdkapi.checkWord("esenlik").then(response => {
 
 
@@ -69,7 +66,6 @@ true
 ```
 
 ```js
-
 tdkapi.checkWord("asdasdasdasd").then(response => {
 
 console.log(response)
@@ -86,7 +82,6 @@ false
 ## Kelimeden Atasözü Yada Deyim Arama
 
 ```js
-
 tdkapi.getProVerbs("keyif").then(response => {
 
 console.log(response)
@@ -96,8 +91,7 @@ console.log(response)
 
 Çıktı: 
 
-```json
-
+```
 {
   proverbs: [
     {
