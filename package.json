@@ -1,13 +1,19 @@
 {
   "name": "@technoeren/tdk-api",
-  "version": "0.0.9",
-  "main": "app.js",
+  "version": "0.1.1",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
   "author": "technoeren13 <erenbaltaci7878@gmail.com>",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "node src/app",
-    "dev": "nodemon dist/app.js",
+    "start": "tsc && node src/index.js",
+    "dev": "nodemon dist/index.js",
     "test": "tsc && node dist/test.js",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
