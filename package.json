@@ -31,7 +31,8 @@
   "keywords": [
     "tdk",
     "tdk-api",
-    "türk dil kurumu"
+    "türk dil kurumu",
+    "turkish dictionary"
   ],
   "husky": {
     "hooks": {
