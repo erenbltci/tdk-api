@@ -27,9 +27,7 @@ const tdkapi = new TDKAPI();
 ```js
 tdkapi.getWord("esenlik").then(response => {
 
-
 console.log(response)
-
 })
 ```
 
@@ -53,9 +51,7 @@ console.log(response)
 ```js
 tdkapi.checkWord("esenlik").then(response => {
 
-
 console.log(response)
-
 })
 ```
 
@@ -69,7 +65,6 @@ true
 tdkapi.checkWord("asdasdasdasd").then(response => {
 
 console.log(response)
-
 })
 ```
 
@@ -85,7 +80,6 @@ false
 tdkapi.getProVerbs("keyif").then(response => {
 
 console.log(response)
-
 })
 ```
 
