@@ -1,10 +1,8 @@
 import axios from "axios";
-import { InvalidWord, ValueNotFound } from "../helpers/tdk-errors";
-import { IGetWord } from '../typings';
+import { InvalidWord, ValueNotFound } from "../errors/tdk-errors";
+import { IGetWord, ProVerbsResponse, WordMean } from '../types';
 
-
-
-class TDKAPI {
+export class TDKAPI {
   constructor() {}
 
   public async getWord(word: string): Promise<IGetWord> {
@@ -15,7 +13,7 @@ class TDKAPI {
     );
     if (response.data.error) throw new ValueNotFound();
 
-    let anlamlar: any = [];
+    let anlamlar: WordMean[] = [];
 
     for (const element of response.data[0].anlamlarListe) {
       anlamlar.push({
@@ -53,7 +51,7 @@ class TDKAPI {
 
     if (response.data.error) throw new ValueNotFound();
 
-    let proverbs: any = [{ soz: '', anlam: '', tur: ''}];
+    let proverbs: ProVerbsResponse[] = [{ soz: '', anlam: '', tur: ''}];
 
     for (const element of response.data) {
       proverbs.push({
@@ -67,4 +65,4 @@ class TDKAPI {
   }
 }
 
-export default TDKAPI
+

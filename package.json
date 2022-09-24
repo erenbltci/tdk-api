@@ -1,9 +1,8 @@
 {
   "name": "@technoeren/tdk-api",
-  "version": "0.1.1",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
-  "types": "dist/index.d.ts",
+  "version": "0.2.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist",
     "src"
@@ -23,6 +22,7 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
+  
   "repository": {
     "type": "git",
     "url": "https://github.com/technoeren13/tdk-api.git"
