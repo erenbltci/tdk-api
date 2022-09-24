@@ -51,7 +51,7 @@ export class TDKAPI {
 
     if (response.data.error) throw new ValueNotFound();
 
-    let proverbs: ProVerbsResponse[] = [{ soz: '', anlam: '', tur: ''}];
+    let proverbs: ProVerbsResponse[] = [];
 
     for (const element of response.data) {
       proverbs.push({
@@ -61,7 +61,7 @@ export class TDKAPI {
         });
     }
 
-    return { proverbs };
+    return {proverbs};
   }
 }
 
