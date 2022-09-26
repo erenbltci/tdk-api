@@ -1,6 +1,7 @@
 # tdk-api
 Türk Dil Kurumu API
 
+# Eğer paket ile ilgili bir sorun yaşıyorsanız discord'ta technoeren#7608 ile benimle iletişime geçebilirsiniz.
 
 ## Yükleme
 
