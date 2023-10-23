@@ -75,7 +75,7 @@ console.log(response)
 false
 ```
 
-## Kelimeden Atasözü Yada Deyim Arama
+## Kelimeden Atasözü Ya da Deyim Arama
 
 ```js
 tdkapi.getProVerbs("keyif").then(response => {
